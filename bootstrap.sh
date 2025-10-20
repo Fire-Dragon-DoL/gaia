@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-decho() { echo "[Hades] " "$@" >&2 }
+decho() {
+  echo "[Hades] " "$@" >&2
+}
 
 set -euo pipefail
 mkdir -p ~/Code
