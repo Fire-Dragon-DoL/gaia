@@ -9,7 +9,7 @@ Idempotent, can be executed multiple times.
 Execute:
 
 ```
-curl 'https://raw.githubusercontent.com/Fire-Dragon-DoL/hades/refs/heads/main/bootstrap.sh' | bash
+curl -fsSL 'https://raw.githubusercontent.com/Fire-Dragon-DoL/hades/refs/heads/main/bootstrap.sh' | bash
 ```
 
 ## Features
