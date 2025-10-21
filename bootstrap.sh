@@ -20,7 +20,7 @@ is-installed() {
 }
 
 pacman-install-missing() {
-  is-installed "$1" || pacman -S "$1"
+  is-installed "$1" || sudo pacman -S "$1"
 }
 
 pacman-install-missing 'chezmoi'
