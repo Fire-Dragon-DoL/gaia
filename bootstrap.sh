@@ -26,5 +26,8 @@ pacman-install-missing() {
 pacman-install-missing 'chezmoi'
 [[ -d "$CHEZMOI_SOURCE_DIR" ]] || chezmoi init "$CHEZMOI_GITHUB_REPO"
 
+mkdir -p ~/.ssh
+chmod 0700 ~/.ssh
+
 decho "Bootstrap succeeded"
 exit 0
