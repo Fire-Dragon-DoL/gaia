@@ -1,6 +1,6 @@
-# Hades
+# Gaia
 
-Omarchy customization script.
+Machines initialization script.
 
 ## Bootstrap
 
@@ -9,7 +9,7 @@ Idempotent, can be executed multiple times.
 Execute:
 
 ```
-curl -fsSL 'https://raw.githubusercontent.com/Fire-Dragon-DoL/hades/refs/heads/main/bootstrap.sh' | bash
+curl -fsSL 'https://raw.githubusercontent.com/Fire-Dragon-DoL/gaia/refs/heads/main/bootstrap.sh' | bash
 ```
 
 ## Features
