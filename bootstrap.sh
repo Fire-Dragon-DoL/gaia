@@ -4,10 +4,10 @@ set -euo pipefail
 
 CHEZMOI_SOURCE_DIR="$HOME/.local/share/chezmoi"
 GITHUB_USERNAME="Fire-Dragon-DoL"
-CHEZMOI_GITHUB_REPO="https://github.com/$GITHUB_USERNAME/hades.git"
+CHEZMOI_GITHUB_REPO="https://github.com/$GITHUB_USERNAME/gaia.git"
 
 decho() {
-  echo "[Hades] " "$@" >&2
+  echo "[Gaia] " "$@" >&2
 }
 
 is-installed() {
