@@ -30,7 +30,7 @@ pacman-install-missing 'chezmoi'
 mkdir -p "$HOME/.ssh"
 chmod 0700 "$HOME/.ssh"
 [[ -f "$HOME/.ssh/id_ed25519" ]] && chmod 0600 "$HOME/.ssh/id_ed25519"
-[[ -f "$HOME.ssh/id_ed25519.pub" ]] && chmod 0644 "$HOME/.ssh/id_ed25519.pub"
+[[ -f "$HOME/.ssh/id_ed25519.pub" ]] && chmod 0644 "$HOME/.ssh/id_ed25519.pub"
 
 decho "Bootstrap succeeded"
 exit 0
