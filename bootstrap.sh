@@ -23,11 +23,14 @@ pacman-install-missing() {
   is-installed "$1" || sudo pacman -S "$1"
 }
 
+is-installed 'wl-copy' || sudo pacman -S 'wl-clipboard'
 pacman-install-missing 'chezmoi'
 [[ -d "$CHEZMOI_SOURCE_DIR" ]] || chezmoi init "$CHEZMOI_GITHUB_REPO"
 
 mkdir -p ~/.ssh
 chmod 0700 ~/.ssh
+[[ -f "~/.ssh/id_ed25519" ]] && chmod 0600 "~/.ssh/id_ed25519"
+[[ -f "~/.ssh/id_ed25519.pub" ]] && chmod 0644 "~/.ssh/id_ed25519.pub"
 
 decho "Bootstrap succeeded"
 exit 0
