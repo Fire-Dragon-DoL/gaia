@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Disable Screensaver
+touch ~/.local/state/omarchy/toggles/screensaver-off
+
