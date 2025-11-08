@@ -1,3 +1,22 @@
 #!/usr/bin/env ruby
 
+require_relative "../boot"
 
+config_path = APP_ROOT.join(config_path)
+pkgs_path = config_path.join("pkgs.yml")
+
+pkgs = YAML.safe_load(pkgs_path)
+
+pacmans = pkgs["pacman"] || []
+yays = pkgs["yay"] || []
+scripts = pkgs["script"] || []
+
+pacmans.each do |pkg|
+  Shell.system("omarchy-pkg-add", pkg.to_s)
+end
+yays.each do |pkg|
+  Shell.system("yay", "-S", pkg.to_s)
+end
+scripts.each do |script|
+  Shell.system(script.to_s)
+end

@@ -1,3 +1,9 @@
+pacman:
+  - slack-desktop
 yay:
   - google-chrome
-  - 
+  - cursor-bin
+  - zooom
+  - pritunl-client-bin
+script:
+  - omarchy-install-vscode

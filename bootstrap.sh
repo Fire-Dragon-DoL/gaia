@@ -25,6 +25,7 @@ pacman-install-missing() {
 
 is-installed 'wl-copy' || sudo pacman -S 'wl-clipboard'
 pacman-install-missing 'chezmoi'
+is-installed 'ruby' || omarchy-install-dev-env ruby
 
 mkdir -p "$HOME/.ssh"
 chmod 0700 "$HOME/.ssh"
